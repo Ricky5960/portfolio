@@ -1,4 +1,4 @@
-# nuxt-example
+# Portfolio
 
 > Nuxt.js project
 
