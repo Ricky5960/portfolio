@@ -12,72 +12,10 @@
 
       <section id="skills">
         <h2 class="subtitle">Skills</h2>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
+        <div v-for="(skillList, index) in skills" :key="index" class="tile is-ancestor">
+          <div v-for="skill in skillList" :key="skill.id" class="tile is-parent is-4">
             <div class="tile is-child box">
-              <p>Java</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Spring Boot</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Kotlin</p>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>JavaScript</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Vue.js</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>HTML5/CSS3</p>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>SQL</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>AWS</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Git</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Photo</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Video</p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>Editing</p>
+              <p>{{ skill.name }}</p>
             </div>
           </div>
         </div>
@@ -85,57 +23,11 @@
 
       <section id="works">
         <h2 class="subtitle">Works</h2>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-6">
+        <div v-for="(workList, index) in works" :key="index" class="tile is-ancestor">
+          <div v-for="work in workList" :key="work.id" class="tile is-parent" :class="changeColumn(index)">
             <div class="tile is-child box">
               <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242182/kt-portfolio-app/portforio_01.jpg">
-              </p>
-            </div>
-          </div>
-          <div class="tile is-parent is-6">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_02.jpg">
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242084/kt-portfolio-app/portforio_03.jpg">
-              </p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_04.jpg">
-              </p>
-            </div>
-          </div>
-          <div class="tile is-parent is-4">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242095/kt-portfolio-app/portforio_05.jpg">
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="tile is-ancestor">
-          <div class="tile is-parent is-6">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242098/kt-portfolio-app/portforio_06.jpg">
-              </p>
-            </div>
-          </div>
-          <div class="tile is-parent is-6">
-            <div class="tile is-child box">
-              <p>
-                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_07.jpg">
+                <img :src="imageSrc(work)">
               </p>
             </div>
           </div>
@@ -151,6 +43,7 @@
           </div>
         </div>
       </section>
+
     </div>
   </section>
 </template>
@@ -161,6 +54,35 @@
   export default {
     components: {
       AppLogo
+    },
+    data: function () {
+      return {
+        skills: [
+          [{id: 1, name: 'Java'}, {id: 2, name: 'Spring Boot'}, {id: 3, name: 'Kotlin'}],
+          [{id: 4, name: 'JavaScript'}, {id: 5, name: 'Vue.js'}, {id: 6, name: 'HTML5/CSS3'}],
+          [{id: 7, name: 'SQL'}, {id: 8, name: 'AWS'}, {id: 10, name: 'Git'}],
+          [{id: 11, name: 'Photo'}, {id: 12, name: 'Video'}, {id: 13, name: 'Editing'}]
+        ],
+        works: [
+          [{id: 1, name: 'v1537242182'}, {id: 2, name: 'v1537242086'}],
+          [{id: 3, name: 'v1537242084'}, {id: 4, name: 'v1537242086'}, {id: 5, name: 'v1537242095'}],
+          [{id: 6, name: 'v1537242098'}, {id: 7, name: 'v1537242086'}],
+        ]
+      }
+    },
+    methods: {
+      imageSrc: function (work) {
+        return `https://res.cloudinary.com/hx07dfrao/image/upload/${work.name}/kt-portfolio-app/portforio_0${work.id}.jpg`
+      },
+      changeColumn(index) {
+        var column = 'is-6';
+        var num = index + 1;
+
+        if(num % 2 === 0) {
+          column = 'is-4';
+        }
+        return column
+      }
     }
   }
 </script>
