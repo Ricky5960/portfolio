@@ -89,14 +89,14 @@
           <div class="tile is-parent is-6">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_01.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242182/kt-portfolio-app/portforio_01.jpg">
               </p>
             </div>
           </div>
           <div class="tile is-parent is-6">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_02.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_02.jpg">
               </p>
             </div>
           </div>
@@ -105,21 +105,21 @@
           <div class="tile is-parent is-4">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_03.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242084/kt-portfolio-app/portforio_03.jpg">
               </p>
             </div>
           </div>
           <div class="tile is-parent is-4">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_04.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_04.jpg">
               </p>
             </div>
           </div>
           <div class="tile is-parent is-4">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_05.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242095/kt-portfolio-app/portforio_05.jpg">
               </p>
             </div>
           </div>
@@ -128,14 +128,14 @@
           <div class="tile is-parent is-6">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_06.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242098/kt-portfolio-app/portforio_06.jpg">
               </p>
             </div>
           </div>
           <div class="tile is-parent is-6">
             <div class="tile is-child box">
               <p>
-                <img src="img/portfolio/portforio_07.jpg">
+                <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537242086/kt-portfolio-app/portforio_07.jpg">
               </p>
             </div>
           </div>
