@@ -37,7 +37,7 @@
     },
     methods: {
       imageSrc: function (work) {
-        return `https://res.cloudinary.com/hx07dfrao/image/upload/${work.name}/kt-portfolio-app/portforio_0${work.id}.jpg`
+        return `https://res.cloudinary.com/hx07dfrao/image/upload/${work.name}/kt-portfolio-app/portfolio_0${work.id}.jpg`
       },
       changeColumn(index) {
         var column = 'is-6';
@@ -46,7 +46,7 @@
         if(num % 2 === 0) {
           column = 'is-4';
         }
-        return column
+        return colum
       }
     }
   }
