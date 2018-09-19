@@ -46,7 +46,7 @@
         if(num % 2 === 0) {
           column = 'is-4';
         }
-        return colum
+        return column
       }
     }
   }
