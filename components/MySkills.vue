@@ -13,7 +13,7 @@
 
 <script>
   export default {
-    name: "Skills",
+    name: "MySkills",
     data: function () {
       return {
         skills: [

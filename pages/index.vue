@@ -8,21 +8,21 @@
         <h1 class="title">Portfolio</h1>
         <h2 class="subtitle">Kobayashi Tatsuya</h2>
       </section>
-      <!--<skills/>-->
-      <!--<works/>-->
+      <my-skills/>
+      <my-works/>
     </div>
   </section>
 </template>
 
 <script>
   import AppLogo from '~/components/AppLogo.vue'
-  // import Skills from '~/components/Skills.vue'
-  // import Works from '~/components/works.vue'
+  import MySkills from '~/components/MySkills.vue'
+  import MyWorks from '~/components/MyWorks.vue'
 
   export default {
     components: {
-      // Skills,
-      // Works,
+      MySkills,
+      MyWorks,
       AppLogo
     }
   }
