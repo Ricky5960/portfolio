@@ -1,13 +1,13 @@
-<!--<template>-->
-  <!--<div></div>-->
-<!--</template>-->
+<template>
+  <div></div>
+</template>
 
-<!--<script>-->
-    <!--export default {-->
-        <!--name: "works"-->
-    <!--}-->
-<!--</script>-->
+<script>
+    export default {
+        name: "works"
+    }
+</script>
 
-<!--<style scoped>-->
+<style scoped>
 
-<!--</style>-->
+</style>
