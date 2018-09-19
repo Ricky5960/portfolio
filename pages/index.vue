@@ -16,13 +16,13 @@
 
 <script>
   import AppLogo from '~/components/AppLogo.vue'
-  import Skills from '~/components/Skills.vue'
-  import Works from '~/components/works.vue'
+  // import Skills from '~/components/Skills.vue'
+  // import Works from '~/components/works.vue'
 
   export default {
     components: {
-      Skills,
-      Works,
+      // Skills,
+      // Works,
       AppLogo
     }
   }
