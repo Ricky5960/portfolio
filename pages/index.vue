@@ -8,8 +8,8 @@
         <h1 class="title">Portfolio</h1>
         <h2 class="subtitle">Kobayashi Tatsuya</h2>
       </section>
-      <skills/>
-      <works/>
+      <!--<skills/>-->
+      <!--<works/>-->
     </div>
   </section>
 </template>
