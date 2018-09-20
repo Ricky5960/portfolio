@@ -1,11 +1,16 @@
 <template>
-  <div></div>
+  <my-works/>
 </template>
 
 <script>
-    export default {
-        name: "works"
+  import MyWorks from '~/components/MyWorks.vue'
+
+  export default {
+    name: "works",
+    components: {
+      MyWorks
     }
+  }
 </script>
 
 <style scoped>

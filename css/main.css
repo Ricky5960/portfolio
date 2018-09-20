@@ -50,6 +50,9 @@ section {
   margin-top: 35px;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
 nav li {
   float: left;
   width: 50%;

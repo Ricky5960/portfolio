@@ -1,13 +1,7 @@
 <template>
   <section class="container">
-    <!-- main -->
     <div id="main">
-      <section id="profile">
-        <!--<app-logo/>-->
-        <img src="https://res.cloudinary.com/hx07dfrao/image/upload/v1537370773/kt-portfolio-app/profile.png">
-        <h1 class="title">Portfolio</h1>
-        <h2 class="subtitle">Kobayashi Tatsuya</h2>
-      </section>
+      <my-profile/>
       <my-skills/>
       <my-works/>
     </div>
@@ -15,15 +9,15 @@
 </template>
 
 <script>
-  import AppLogo from '~/components/AppLogo.vue'
+  import MyProfile from '~/components/MyProfile.vue'
   import MySkills from '~/components/MySkills.vue'
   import MyWorks from '~/components/MyWorks.vue'
 
   export default {
     components: {
+      MyProfile,
       MySkills,
-      MyWorks,
-      AppLogo
+      MyWorks
     }
   }
 </script>
