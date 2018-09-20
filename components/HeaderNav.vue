@@ -42,7 +42,6 @@
     data() {
       return {
         menuActive: false,
-        // menuPosition: false
       }
     },
     methods: {
