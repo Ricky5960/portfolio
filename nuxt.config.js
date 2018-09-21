@@ -15,9 +15,17 @@ module.exports = {
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
     ]
   },
+  modules: [
+    // provide path to the file with resources
+    ['nuxt-sass-resources-loader', './assets/main.scss']
+  ],
   css: [
     // node.js module but we specify the lang
     { src: 'bulma', lang: 'sass' },
+    '@fortawesome/fontawesome-free-webfonts',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-brands.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-regular.css',
+    '@fortawesome/fontawesome-free-webfonts/css/fa-solid.css',
     // Css file in the project
     // It is important to give an absolute path
     resolve(__dirname, 'css/main.css')

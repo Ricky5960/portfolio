@@ -5,13 +5,11 @@
         <div class="container">
           <div class="navbar-brand">
             <a href="https://twitter.com/t04_tatsuya" target="_blank" class="navbar-item">
-              <img src="img/sns/Twitter_Logo_Blue.png" alt="Twitter">
+              <i class="fab fa-twitter fa-2x"></i>
             </a>
-            <a href="https://www.wantedly.com/users/18153987" target="_blank" class="navbar-item">
-              <img src="img/sns/wantedly_mark.png" alt="wantedry">
-            </a>
+
             <a href="https://github.com/kokokoba" target="_blank" class="navbar-item">
-              <img src="img/sns/GitHub-Mark-32px.png" alt="GitHub">
+              <i class="fab fa-github fa-2x"></i>
             </a>
 
             <span class="navbar-burger burger" :class="{ 'is-active': menuActive }"
