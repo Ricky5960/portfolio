@@ -40,6 +40,7 @@
     font-size: 40px;
     color: #35495e;
     letter-spacing: 1px;
+    margin-bottom: 0 !important;
   }
 
   .subtitle {

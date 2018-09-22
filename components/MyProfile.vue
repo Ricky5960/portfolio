@@ -23,12 +23,21 @@
       </div>
     </div>
 
-    <div class="timeline is-centered">
-      <div v-for="timeLine in timeLineList" :key="timeLine.id" class="timeline-item">
+    <!--<div class="timeline is-centered">-->
+      <!--<div v-for="timeLine in timeLineList" :key="timeLine.id" class="timeline-item pos-left" :class="{'pos-right': timeLine.id % 2 != 0 ? true: false}">-->
+        <!--<div class="timeline-marker is-primary"></div>-->
+        <!--<div class="timeline-content">-->
+          <!--<p class="heading" :class="{'has-text-left': timeLine.id % 2 != 0 ? true: false}">{{ timeLine.day }}</p>-->
+          <!--<p class="has-text-weight-bold" :class="{'has-text-left': timeLine.id % 2 != 0 ? true: false}">{{ timeLine.content }}</p>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="timeline">
+      <div v-for="timeLine in timeLineList" :key="timeLine.id" class="timeline-item pos-right">
         <div class="timeline-marker is-primary"></div>
         <div class="timeline-content">
-          <p class="heading">{{ timeLine.day }}</p>
-          <p>{{ timeLine.content }}</p>
+          <p class="heading has-text-left">{{ timeLine.day }}</p>
+          <p class="has-text-weight-bold has-text-left">{{ timeLine.content }}</p>
         </div>
       </div>
     </div>
