@@ -1,17 +1,10 @@
 <template>
   <header class="hero is-medium">
     <div class="hero-head">
-      <nav class="navbar is-transparent">
+      <nav id="navbar" class="navbar has-shadow is-spaced is-transparent">
         <div class="container">
           <div class="navbar-brand">
-            <a href="https://twitter.com/t04_tatsuya" target="_blank" class="navbar-item">
-              <i class="fab fa-twitter fa-2x"></i>
-            </a>
-
-            <a href="https://github.com/kokokoba" target="_blank" class="navbar-item">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-
+            <h1 class="title">Portfolio</h1>
             <span class="navbar-burger burger" :class="{ 'is-active': menuActive }"
                   @click="menuToggle()" data-target="navbarMenuHeroA">
               <span></span>
@@ -22,10 +15,16 @@
 
           <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': menuActive }">
             <div class="navbar-end">
-              <nuxt-link to="/" class="navbar-item">Home</nuxt-link>
-              <nuxt-link to="/about" class="navbar-item">About</nuxt-link>
-              <nuxt-link to="/works" class="navbar-item">Works</nuxt-link>
-              <nuxt-link to="/contact" class="navbar-item">Contact</nuxt-link>
+              <nuxt-link to="/" class="navbar-item"><span>Home</span></nuxt-link>
+              <nuxt-link to="/about" class="navbar-item"><span>About</span></nuxt-link>
+              <nuxt-link to="/works" class="navbar-item"><span>Works</span></nuxt-link>
+              <nuxt-link to="/contact" class="navbar-item"><span>Contact</span></nuxt-link>
+              <a href="pdf/resume.pdf" download="20180921職務経歴書.pdf" class="button is-primary">
+                <span class="icon">
+                  <i class="fas fa-download"></i>
+                </span>
+                <span>resume</span>
+              </a>
             </div>
           </div>
         </div>

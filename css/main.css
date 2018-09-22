@@ -6,7 +6,6 @@ body {
   color: #333;
   line-height:1.9;
   text-align: center;
-  padding-top: 30px;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -15,6 +14,9 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+header {
+  padding: 20px 20px 0px 20px;
+}
 a {
   color: #333;
   text-decoration: none;
@@ -25,26 +27,19 @@ a:hover {
   text-decoration: none;
 }
 
+.sp {
+  display: block;
+}
 
-
-/*.sp {*/
-  /*display: block;*/
-/*}*/
-
-/*.pc {*/
-  /*display: none;*/
-/*}*/
+.pc {
+  display: none;
+}
 
 /* header
 ** -----------------------------------------
 */
 
 header {
-  /*position: relative;*/
-  /*max-width: 1152px;*/
-  /*width: 1152px;*/
-  /*height: 80px;*/
-  /*margin: 0 auto;*/
   overflow: hidden;
 }
 
@@ -55,6 +50,7 @@ section {
 .wrap {
   flex-wrap: wrap;
 }
+
 nav li {
   float: left;
   width: 50%;
@@ -76,31 +72,52 @@ nav ul li a {
   letter-spacing: 0.1em;
 }
 
-/*.socialBtn {*/
-  /*float: right;*/
-/*}*/
-
-/*.socialBtn li {*/
-  /*display: inline;*/
-  /*margin-right: 14px;*/
-/*}*/
-
-/*.socialBtn li.last {*/
-  /*margin-right: 0;*/
-/*}*/
-
-/*.socialBtn img {*/
-  /*width: 22px;*/
-  /*height: 22px;*/
-/*}*/
-
 /* footer
 ** -----------------------------------------
 */
 
 .footer {
-  background-color: #ffffff;
-  padding: 48px 24px 36px;
+  background-color: #fafafa;
+  padding: 3rem 1.5rem 6rem;
+  margin-top: 50px;
+}
+
+.social {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.social ul li {
+  display: inline-block ;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+.social ul li:last-child {
+  margin-right: 0;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: .75rem;
+}
+
+.bd-notification.is-primary {
+  background-color: #00d1b2;
+  color: #fff;
+}
+
+.bd-notification {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  color: #7a7a7a;
+  font-weight: 600;
+  padding: 1.25rem 0;
+  position: relative;
+  text-align: center;
 }
 
 @media only screen and (max-width: 759px) {
@@ -209,22 +226,6 @@ nav ul li a {
 
 /*!* PC向けレイアウトの指定：961px～ *!*/
 @media only screen and (min-width: 961px) {
-
-
-  /*a:hover {*/
-    /*text-decoration: underline;*/
-  /*}*/
-
-  /* header-pagenavi
-  ** -----------------------------------------
-  */
-
-  /*nav {*/
-    /*float: left;*/
-  /*}*/
-  /*.socialBtn {*/
-    /*float: right;*/
-  /*}*/
 
   .videoWidth {
     width: 640px;

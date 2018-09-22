@@ -1,10 +1,10 @@
 <template>
   <section id="skills">
     <h2 class="subtitle">Skills</h2>
-    <div class="tile is-ancestor is-multiline is-mobile wrap">
-      <div v-for="skill in skills" :key="skill.id" class="tile is-parent is-4">
-        <div class="tile is-child box">
-          <p>{{ skill.name }}</p>
+    <div class="columns is-multiline is-mobile wrap">
+      <div v-for="skill in skills" :key="skill.id" class="column is-4">
+        <div class="column">
+          <p class="bd-notification is-primary">{{ skill.name }}</p>
         </div>
       </div>
     </div>

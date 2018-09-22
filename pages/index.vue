@@ -4,6 +4,7 @@
       <my-profile/>
       <my-skills/>
       <my-works/>
+      <my-contact/>
     </div>
   </section>
 </template>
@@ -12,9 +13,11 @@
   import MyProfile from '~/components/MyProfile.vue'
   import MySkills from '~/components/MySkills.vue'
   import MyWorks from '~/components/MyWorks.vue'
+  import MyContact from "~/components/MyContact";
 
   export default {
     components: {
+      MyContact,
       MyProfile,
       MySkills,
       MyWorks
@@ -34,7 +37,7 @@
     font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
     display: block;
     font-weight: bold;
-    font-size: 80px;
+    font-size: 40px;
     color: #35495e;
     letter-spacing: 1px;
   }

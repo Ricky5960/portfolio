@@ -17,7 +17,7 @@ module.exports = {
   },
   modules: [
     // provide path to the file with resources
-    ['nuxt-sass-resources-loader', './assets/main.scss']
+    ['nuxt-sass-resources-loader', './assets/main.scss'],
   ],
   css: [
     // node.js module but we specify the lang
@@ -29,6 +29,9 @@ module.exports = {
     // Css file in the project
     // It is important to give an absolute path
     resolve(__dirname, 'css/main.css')
+  ],
+  plugins: [
+    '~plugins/buefy'
   ],
   /*
   ** Customize the progress bar color
