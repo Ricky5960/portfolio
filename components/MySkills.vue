@@ -2,7 +2,7 @@
   <section id="skills">
     <h2 class="subtitle">Skills</h2>
     <div class="columns is-multiline is-mobile wrap">
-      <div v-for="skill in skills" :key="skill.id" class="column is-4">
+      <div v-for="skill in skills" :key="skill.id" class="column is-6-mobile is-4-tablet is-4-desktop">
         <div class="column">
           <p class="bd-notification is-primary">{{ skill.name }}</p>
         </div>

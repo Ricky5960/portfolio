@@ -159,6 +159,10 @@ nav ul li a {
     margin: 35px 25px 0px 25px;
   }
 
+  #profile h2 {
+    display: none;
+  }
+
   .videoWidth {
     width: 320px;
     height: 180px;

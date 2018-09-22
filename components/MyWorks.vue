@@ -1,7 +1,7 @@
 <template>
   <section id="works">
     <h2 class="subtitle">Works</h2>
-    <div class="tile is-ancestor is-multiline is-mobile wrap">
+    <div class="tile is-ancestor is-multiline is-mobile wrap is-gapless">
       <div v-for="work in works" :key="work.id" class="tile is-parent" :class="changeColumn(work.orientation)">
         <div class="tile is-child">
           <p>
