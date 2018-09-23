@@ -16,7 +16,6 @@
           <div id="navbarMenuHeroA" class="navbar-menu" :class="{ 'is-active': menuActive }">
             <div class="navbar-end">
               <nuxt-link to="/" class="navbar-item"><span>Home</span></nuxt-link>
-              <nuxt-link to="/about" class="navbar-item"><span>About</span></nuxt-link>
               <nuxt-link to="/works" class="navbar-item"><span>Works</span></nuxt-link>
               <nuxt-link to="/contact" class="navbar-item"><span>Contact</span></nuxt-link>
               <a href="pdf/resume.pdf" download="20180921職務経歴書.pdf" class="button is-primary">
